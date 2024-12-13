@@ -5,13 +5,24 @@ export function sendEmail(data: FormData) {
 
   fetch(apiEndpoint, {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify(data),
   })
-    .then((res) => res.json())
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error("Errore durante l'invio dell'email");
+      }
+      return res.json();
+    })
     .then((response) => {
       alert(response.message);
     })
     .catch((err) => {
-      alert(err);
+      console.error(err);
+      alert(
+        "Errore durante l'invio dell'email. Controlla la console per dettagli."
+      );
     });
 }

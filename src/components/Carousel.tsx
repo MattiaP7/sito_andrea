@@ -9,40 +9,13 @@ import {
 import { Card, CardContent } from "@/components/ui/Card";
 import Image from "next/image";
 import Link from "next/link";
-
-const images = [
-  {
-    src: "/static/image/progettazione.jpg",
-    title: "Progettazione",
-    link: "/attivita/progettazione",
-  },
-  {
-    src: "/static/image/direzione_lavori.jpg",
-    title: "Direzione Lavori",
-    link: "/attivita/direzione_lavori",
-  },
-  {
-    src: "/static/image/catasto.jpg",
-    title: "Catasto",
-    link: "/attivita/catasto",
-  },
-  {
-    src: "/static/image/sicurezza_cantieri.jpg",
-    title: "Sicurezza dei cantieri",
-    link: "/attivita/sicurezza-cantieri",
-  },
-  {
-    src: "/static/image/sicurezza_lavoro.jpg",
-    title: "Sicurezza sul lavoro",
-    link: "/attivita/sicurezza-lavoro",
-  },
-];
+import { cards } from "@/data/cards";
 
 export function CarouselHome() {
   return (
     <Carousel className="relative w-full">
       <CarouselContent>
-        {images.map((image, index) => (
+        {cards.map((image, index) => (
           <CarouselItem key={index} className="flex-shrink-0 w-full">
             <div className="relative w-full">
               <Card className="w-full">

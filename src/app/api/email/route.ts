@@ -1,41 +1,38 @@
 import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-import Mail from "nodemailer/lib/mailer";
 
 export async function POST(request: NextRequest) {
-  const { email, name, subject, message } = await request.json();
+  try {
+    const { email, name, subject, message } = await request.json();
 
-  const transport = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.MY_EMAIL,
-      pass: process.env.MY_PASSWORD,
-    },
-  });
-
-  const mailOptions: Mail.Options = {
-    from: process.env.MY_EMAIL,
-    to: `"${name}" <${email}>`,
-    subject: `${subject}`,
-    text: message,
-    replyTo: email,
-  };
-
-  const sendMailPromise = () =>
-    new Promise<string>((resolve, reject) => {
-      transport.sendMail(mailOptions, function (err) {
-        if (!err) {
-          resolve("Email inviata con successo.");
-        } else {
-          reject(err.message);
-        }
-      });
+    // Configurazione del trasporto email
+    const transport = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.MY_EMAIL, // Il tuo indirizzo email
+        pass: process.env.MY_PASSWORD, // La password o App Password
+      },
     });
 
-  try {
-    await sendMailPromise();
+    // Configurazione dell'email
+    await transport.sendMail({
+      from: `"${name}" <${email}>`, // Mittente (utente)
+      to: process.env.MY_EMAIL, // Destinatario (te stesso)
+      subject: subject,
+      html: `<p>Hai ricevuto un nuovo messaggio:</p>
+             <p><strong>Nome:</strong> ${name}</p>
+             <p><strong>Email:</strong> ${email}</p>
+             <p><strong>Messaggio:</strong></p>
+             <p>${message}</p>`,
+    });
+
+    // Risposta di successo
     return NextResponse.json({ message: "Email inviata con successo." });
-  } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 });
+  } catch (error) {
+    console.error("Errore durante l'invio dell'email:", error);
+    return NextResponse.json(
+      { error: "Errore durante l'invio dell'email. Riprova più tardi." },
+      { status: 500 }
+    );
   }
 }
