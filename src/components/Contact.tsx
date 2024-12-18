@@ -14,7 +14,7 @@ export type FormData = {
 const MAX_MESSAGE_LENGTH = 400;
 
 const Contact: FC = () => {
-  const { register, handleSubmit, watch } = useForm<FormData>();
+  const { register, handleSubmit } = useForm<FormData>();
   const [charCount, setCharCount] = useState(0);
 
   // Aggiorna il conteggio dei caratteri dinamicamente

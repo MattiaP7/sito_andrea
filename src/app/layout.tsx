@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
-import CookieConsentToast from "@/components/CookieConsentToast";
+//import CookieConsentToast from "@/components/CookieConsentToast";
 //import MobileMenu from "@/components/MobileMenu";
 
 const inter = Inter({ subsets: ["latin"] });
