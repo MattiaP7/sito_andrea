@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { CarouselHome } from "@/components/Carousel";
-import { Button, buttonVariants } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
   title: "Andrea Corazza",

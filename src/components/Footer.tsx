@@ -75,8 +75,8 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="text-center mt-8">
           <p className="text-sm text-gray-400">
-            &copy;2024 - {new Date().getFullYear()} Andrea Corazza. Tutti i
-            diritti riservati. Sito creato da:{" "}
+            &copy;{new Date().getFullYear()} Andrea Corazza. Tutti i diritti
+            riservati. Sito creato da:{" "}
             <Link
               href="https://github.com/MattiaP7/"
               target="_blank"

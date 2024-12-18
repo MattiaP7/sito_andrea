@@ -26,9 +26,9 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-slate-50 antialiased">
         <Navbar />
-
         <main>{children}</main>
-        <CookieConsentToast />
+
+        {/*<CookieConsentToast />*/}
 
         <Footer />
       </body>

@@ -46,14 +46,7 @@ const Navbar = async () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-48">
               <DropdownMenuItem asChild>
-                <Link href="/attivita/sicurezza-cantieri">
-                  Sicurezza Cantiere
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/attivita/sicurezza-lavoro">
-                  Sicurezza Luoghi di lavoro
-                </Link>
+                <Link href="/attivita/sicurezza">Sicurezza</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link href="/attivita/progettazione">Progettazione</Link>

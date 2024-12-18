@@ -1,5 +1,13 @@
 import Contact from "@/components/Contact";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Andrea Corazza - pagina contatti",
+  description:
+    "Sito internet di Andrea Corazza, pagina per mandare un breve messaggio",
+};
+
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-gray-100 dark:bg-gray-900 p-8">
@@ -10,8 +18,8 @@ export default function Home() {
           Contattaci
         </h1>
         <p className="text-gray-600 dark:text-gray-400 text-center max-w-xl">
-          Hai domande o richieste? Compila il modulo qui sotto e ti risponderemo
-          il prima possibile.
+          Hai domande, richieste o messaggi brevi? Compila il modulo qui sotto e
+          ti risponderemo il prima possibile.
         </p>
         <Contact />
       </div>

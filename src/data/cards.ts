@@ -1,47 +1,38 @@
 export const cards = [
   {
     title: "Progettazione",
-    description:
+    sub_title:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, pariatur.",
-    content:
+    description:
       "Totam dolore dolorum molestiae consequatur delectus atque saepe aliquid, debitis accusamus doloribus?",
     link: "/attivita/progettazione",
     src: "/static/image/progettazione.jpg",
   },
   {
     title: "Direzione Lavori",
-    description:
+    sub_title:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, pariatur.",
-    content:
+    description:
       "Totam dolore dolorum molestiae consequatur delectus atque saepe aliquid, debitis accusamus doloribus?",
     link: "/attivita/direzione_lavori",
     src: "/static/image/direzione_lavori.jpg",
   },
   {
     title: "Catasto",
-    description:
+    sub_title:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, pariatur.",
-    content:
+    description:
       "Totam dolore dolorum molestiae consequatur delectus atque saepe aliquid, debitis accusamus doloribus?",
     link: "/attivita/catasto",
     src: "/static/image/catasto.jpg",
   },
   {
-    title: "Sicurezza dei cantieri",
+    title: "Sicurezza",
+    sub_title:
+      "Prevenzione, Normative e Strumenti per la Tutela dei Lavoratori",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, pariatur.",
-    content:
-      "Totam dolore dolorum molestiae consequatur delectus atque saepe aliquid, debitis accusamus doloribus?",
-    link: "/attivita/sicurezza-cantieri",
-    src: "/static/image/sicurezza_cantieri.jpg",
-  },
-  {
-    title: "Sicurezza sul lavoro",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, pariatur.",
-    content:
-      "Totam dolore dolorum molestiae consequatur delectus atque saepe aliquid, debitis accusamus doloribus?",
-    link: "/attivita/sicurezza-lavoro",
-    src: "/static/image/sicurezza_lavoro.jpg",
+      "La sicurezza sul lavoro e nei cantieri tutela la salute dei lavoratori, prevenendo rischi e incidenti tramite normative, formazione e strumenti specifici per ogni ambiente operativo.",
+    link: "/attivita/sicurezza",
+    src: "/static/image/sicurezza_generale.jpg",
   },
 ];

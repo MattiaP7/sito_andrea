@@ -39,10 +39,10 @@ const Page = () => {
               className="w-full h-48 object-cover rounded-t-md"
             />
             <CardHeader>
-              <CardTitle>{card.title}</CardTitle>
-              <CardDescription>{card.description}</CardDescription>
+              <CardTitle className="text-center">{card.title}</CardTitle>
+              <CardDescription>{card.sub_title}</CardDescription>
             </CardHeader>
-            <CardContent>{card.content}</CardContent>
+            <CardContent>{card.description}</CardContent>
             <CardFooter className="flex justify-between content-center">
               <Button
                 className="content-center flex justify-center"

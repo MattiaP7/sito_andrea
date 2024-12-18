@@ -1,7 +1,7 @@
 "use client";
 
 import { sendEmail } from "@/lib/send-email";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { useForm } from "react-hook-form";
 
 export type FormData = {
@@ -11,8 +11,17 @@ export type FormData = {
   message: string;
 };
 
+const MAX_MESSAGE_LENGTH = 400;
+
 const Contact: FC = () => {
-  const { register, handleSubmit } = useForm<FormData>();
+  const { register, handleSubmit, watch } = useForm<FormData>();
+  const [charCount, setCharCount] = useState(0);
+
+  // Aggiorna il conteggio dei caratteri dinamicamente
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const value = e.target.value;
+    setCharCount(value.length);
+  };
 
   function onSubmit(data: FormData) {
     sendEmail(data);
@@ -31,6 +40,7 @@ const Contact: FC = () => {
           Nome Completo
         </label>
         <input
+          required
           type="text"
           id="name"
           placeholder="Inserisci il tuo nome"
@@ -46,6 +56,7 @@ const Contact: FC = () => {
           Email
         </label>
         <input
+          required
           type="email"
           id="email"
           placeholder="esempio@dominio.com"
@@ -61,6 +72,7 @@ const Contact: FC = () => {
           Oggetto
         </label>
         <input
+          required
           type="text"
           id="subject"
           placeholder="Inserisci l'oggetto"
@@ -76,12 +88,18 @@ const Contact: FC = () => {
           Messaggio
         </label>
         <textarea
+          required
           id="message"
           rows={5}
-          placeholder="Scrivi il tuo messaggio"
+          maxLength={MAX_MESSAGE_LENGTH}
+          placeholder={`Scrivi il tuo messaggio (max ${MAX_MESSAGE_LENGTH} caratteri)`}
           className="w-full rounded-lg border border-gray-300 bg-white dark:bg-gray-700 py-3 px-4 text-sm text-gray-700 dark:text-gray-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
           {...register("message", { required: true })}
+          onChange={handleMessageChange}
         ></textarea>
+        <div className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+          Caratteri rimanenti: {MAX_MESSAGE_LENGTH - charCount}
+        </div>
       </div>
       <div className="text-center">
         <button
