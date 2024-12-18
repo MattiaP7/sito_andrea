@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
-      <div className="w-full max-w-4xl">in fase di creazione...</div>
+      <div className="w-full max-w-4xl">in fase di creazione... v2222</div>
     </div>
   );
 };
