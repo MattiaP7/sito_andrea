@@ -14,7 +14,7 @@ const Page = () => {
       {/* Sezione di copertura con immagine */}
       <section className="relative w-full h-[50vh] sm:h-[60vh] lg:h-[70vh]">
         <Image
-          src="/static/image/catasto.jpg"
+          src="/static/image/catasto.webp"
           alt="Catasto"
           width={1920}
           height={1080}

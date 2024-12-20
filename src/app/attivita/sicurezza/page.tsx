@@ -22,7 +22,7 @@ const Page = () => {
       {/* Sezione di copertura con immagine */}
       <section className="relative w-full h-[50vh] sm:h-[60vh] lg:h-[70vh]">
         <Image
-          src="/static/image/sicurezza_generale.jpg"
+          src="/static/image/sicurezza_generale.webp"
           alt="Sicurezza generale"
           width={1920}
           height={1080}
@@ -45,7 +45,7 @@ const Page = () => {
             {/* Immagine */}
             <div className="relative">
               <Image
-                src="/static/image/sicurezza_cantieri.jpg"
+                src="/static/image/sicurezza_cantieri.webp"
                 alt="Sicurezza nei cantieri"
                 width={1920}
                 height={1080}
@@ -161,7 +161,7 @@ const Page = () => {
             {/* Immagine */}
             <div className="relative">
               <Image
-                src="/static/image/sicurezza_lavoro.jpg"
+                src="/static/image/sicurezza_lavoro.webp"
                 alt="Sicurezza nei luoghi di lavoro"
                 width={1920}
                 height={1080}
