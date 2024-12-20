@@ -7,7 +7,7 @@ import { Metadata } from "next";
 //import CookieConsentToast from "@/components/CookieConsentToast";
 //import MobileMenu from "@/components/MobileMenu";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
   title: "Andrea Corazza",

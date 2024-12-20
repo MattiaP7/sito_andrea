@@ -36,6 +36,7 @@ const Navbar = async () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <button
+                aria-label="Menu delle Attività"
                 className={`${buttonVariants({
                   variant: "ghost",
                 })} flex items-center gap-1`}
@@ -46,21 +47,39 @@ const Navbar = async () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-48">
               <DropdownMenuItem asChild>
-                <Link href="/attivita/sicurezza">Sicurezza</Link>
+                <Link aria-label="Link Sicurezza" href="/attivita/sicurezza">
+                  Sicurezza
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/attivita/progettazione">Progettazione</Link>
+                <Link
+                  href="/attivita/progettazione"
+                  aria-label="Link Progettazione"
+                >
+                  Progettazione
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/attivita/direzione_lavori">Direzione Lavori</Link>
+                <Link
+                  aria-label="Link Direzione Lavori"
+                  href="/attivita/direzione_lavori"
+                >
+                  Direzione Lavori
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/attivita/catasto">Catasto</Link>
+                <Link aria-label="Link Catasto" href="/attivita/catasto">
+                  Catasto
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Link href="/about" className={buttonVariants({ variant: "ghost" })}>
+          <Link
+            aria-label="Su di me"
+            href="/about"
+            className={buttonVariants({ variant: "ghost" })}
+          >
             <Book /> Su di me
           </Link>
         </div>

@@ -7,6 +7,7 @@ export const cards = [
       "Totam dolore dolorum molestiae consequatur delectus atque saepe aliquid, debitis accusamus doloribus?",
     link: "/attivita/progettazione",
     src: "/static/image/progettazione.jpg",
+    alt: "Immagine rappresentativa della progettazione edilizia",
   },
   {
     title: "Direzione Lavori",
@@ -16,6 +17,7 @@ export const cards = [
       "Totam dolore dolorum molestiae consequatur delectus atque saepe aliquid, debitis accusamus doloribus?",
     link: "/attivita/direzione_lavori",
     src: "/static/image/direzione_lavori.jpg",
+    alt: "Supervisione di un cantiere edile durante i lavori",
   },
   {
     title: "Catasto",
@@ -25,6 +27,7 @@ export const cards = [
       "Totam dolore dolorum molestiae consequatur delectus atque saepe aliquid, debitis accusamus doloribus?",
     link: "/attivita/catasto",
     src: "/static/image/catasto.jpg",
+    alt: "Rappresentazione grafica e documentale di attività catastali",
   },
   {
     title: "Sicurezza",
@@ -34,5 +37,6 @@ export const cards = [
       "La sicurezza sul lavoro e nei cantieri tutela la salute dei lavoratori, prevenendo rischi e incidenti tramite normative, formazione e strumenti specifici per ogni ambiente operativo.",
     link: "/attivita/sicurezza",
     src: "/static/image/sicurezza_generale.jpg",
+    alt: "Operatori in cantiere che rispettano le norme di sicurezza",
   },
 ];

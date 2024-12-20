@@ -14,6 +14,7 @@ const MobileMenu = () => {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <button
+            aria-label="Menu delle attività"
             className={`${buttonVariants({
               variant: "ghost",
             })} flex items-center`}
@@ -23,19 +24,19 @@ const MobileMenu = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-48" align="end">
           <DropdownMenuItem asChild>
-            <Link href="/contatti">
+            <Link aria-label="Scrivimi" href="/contatti">
               <MessageSquareText className="mr-2" />
               Scrivimi
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/attivita">
+            <Link aria-label="Attività" href="/attivita">
               <Pencil className="mr-2" />
               Attività
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/about">
+            <Link aria-label="Su di me" href="/about">
               <Book className="mr-2" />
               Su di me
             </Link>
