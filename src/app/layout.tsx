@@ -4,10 +4,12 @@ import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
-//import CookieConsentToast from "@/components/CookieConsentToast";
-//import MobileMenu from "@/components/MobileMenu";
+import CookieConsentToast from "@/components/CookieConsentToast";
 
-const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Andrea Corazza",
@@ -28,7 +30,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
 
-        {/*<CookieConsentToast />*/}
+        <CookieConsentToast />
 
         <Footer />
       </body>

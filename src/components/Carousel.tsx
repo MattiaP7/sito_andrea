@@ -1,6 +1,6 @@
 "use client";
+
 import * as React from "react";
-//import Autoplay from "embla-carousel-autoplay";
 
 import {
   Carousel,
@@ -15,18 +15,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { cards } from "@/data/cards";
 
-export function CarouselHome() {
-  /*const plugin = React.useRef(
-    Autoplay({ delay: 999, stopOnInteraction: true })
-  );*/
-
+export default function CarouselHome() {
   return (
-    <Carousel
-      className="relative w-full"
-      /*plugins={[plugin.current]}
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}*/
-    >
+    <Carousel className="relative w-full">
+      <br />
       <CarouselContent>
         {cards.map((image, index) => (
           <CarouselItem key={index} className="flex-shrink-0 w-full">
@@ -58,7 +50,6 @@ export function CarouselHome() {
         ))}
       </CarouselContent>
 
-      {/* Pulsanti di navigazione */}
       <CarouselPrevious
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10"
         aria-label="Precedente"

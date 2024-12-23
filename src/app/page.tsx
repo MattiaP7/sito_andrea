@@ -1,5 +1,5 @@
+import CarouselHome from "@/components/Carousel-v2";
 import type { Metadata } from "next";
-import { CarouselHome } from "@/components/Carousel";
 
 export const metadata: Metadata = {
   title: "Andrea Corazza",

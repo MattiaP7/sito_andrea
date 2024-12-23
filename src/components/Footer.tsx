@@ -19,7 +19,6 @@ const Footer = () => {
           </div>
 
           {/* Sezione "Contatti" */}
-          {/* Sezione "Contatti" */}
           <div>
             <h3 className="text-xl font-semibold mb-4 underline">Contatti</h3>
             <ul className="space-y-2">
