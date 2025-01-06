@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Sezione "Chi sono" */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 underline">Chi sono</h3>
+            <h1 className="text-xl font-semibold mb-4 underline">Chi sono</h1>
             <p className="text-sm text-gray-400">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
               voluptatibus asperiores amet cupiditate? Excepturi nihil ad
@@ -20,7 +20,7 @@ const Footer = () => {
 
           {/* Sezione "Contatti" */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 underline">Contatti</h3>
+            <h1 className="text-xl font-semibold mb-4 underline">Contatti</h1>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-gray-400 hover:text-blue-400">
                 <Mail className="w-5 h-5" />
@@ -57,7 +57,7 @@ const Footer = () => {
 
           {/* Contatti */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 underline">Link utili</h3>
+            <h1 className="text-xl font-semibold mb-4 underline">Link utili</h1>
             <ul className="space-y-2">
               <li>
                 <Link

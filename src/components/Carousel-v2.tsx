@@ -27,7 +27,7 @@ const CarouselHome = () => {
           <Link
             key={card.title}
             href={card.link}
-            className={`absolute inset-0 transition-transform duration-700 ease-in-out ${
+            className={`absolute inset-0 transition-transform duration-700 ease-in-out cursor-pointer ${
               index === currentIndex ? "translate-x-0" : "translate-x-full"
             }`}
             style={{
@@ -38,7 +38,7 @@ const CarouselHome = () => {
               src={card.src}
               alt={card.alt}
               fill
-              className="object-cover"
+              className="object-cover cursor-pointer"
             />
             <h1 className="absolute inset-0 flex items-center justify-center text-white text-4xl md:text-6xl font-bold bg-black/30">
               {card.title}

@@ -22,7 +22,7 @@ const Page = () => {
       {/* Sezione di copertura con immagine */}
       <section className="relative w-full h-[50vh] sm:h-[60vh] lg:h-[70vh]">
         <Image
-          src="/static/image/sicurezza_generale.webp"
+          src="https://utfs.io/f/cbRVfwuVDxZ2Mzh599GPEYTfqbiLpD9ZoheSlB8aRXWAM1uH"
           alt="Sicurezza generale"
           width={1920}
           height={1080}
@@ -45,7 +45,7 @@ const Page = () => {
             {/* Immagine */}
             <div className="relative">
               <Image
-                src="/static/image/sicurezza_cantieri.webp"
+                src="https://utfs.io/f/cbRVfwuVDxZ2NtrwqQ7rDsZhvHcduWz6qpit3L7FwmEXKNT5"
                 alt="Sicurezza nei cantieri"
                 width={1920}
                 height={1080}
@@ -161,7 +161,7 @@ const Page = () => {
             {/* Immagine */}
             <div className="relative">
               <Image
-                src="/static/image/sicurezza_lavoro.webp"
+                src="https://utfs.io/f/cbRVfwuVDxZ2gl5V7IQYzEF2W1ItUZCL0DSBdXrqep36Gx5k"
                 alt="Sicurezza nei luoghi di lavoro"
                 width={1920}
                 height={1080}

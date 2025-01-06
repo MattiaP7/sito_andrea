@@ -30,12 +30,12 @@ const Contact: FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full max-w-lg bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md"
+      className="w-full max-w-4xl bg-transparent p-8 rounded-lg shadow-md space-y-6 mx-auto"
     >
       <div className="mb-5">
         <label
           htmlFor="name"
-          className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300"
+          className="block text-sm font-medium text-gray-800 dark:text-gray-200"
         >
           Nome Completo
         </label>
@@ -44,14 +44,14 @@ const Contact: FC = () => {
           type="text"
           id="name"
           placeholder="Inserisci il tuo nome"
-          className="w-full rounded-lg border border-gray-300 bg-white dark:bg-gray-700 py-3 px-4 text-sm text-gray-700 dark:text-gray-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-gray-300 bg-transparent dark:bg-transparent py-3 px-4 text-sm text-gray-800 dark:text-gray-200 focus:ring-2 focus:ring-blue-500"
           {...register("name", { required: true })}
         />
       </div>
       <div className="mb-5">
         <label
           htmlFor="email"
-          className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300"
+          className="block text-sm font-medium text-gray-800 dark:text-gray-200"
         >
           Email
         </label>
@@ -60,14 +60,14 @@ const Contact: FC = () => {
           type="email"
           id="email"
           placeholder="esempio@dominio.com"
-          className="w-full rounded-lg border border-gray-300 bg-white dark:bg-gray-700 py-3 px-4 text-sm text-gray-700 dark:text-gray-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-gray-300 bg-transparent dark:bg-transparent py-3 px-4 text-sm text-gray-800 dark:text-gray-200 focus:ring-2 focus:ring-blue-500"
           {...register("email", { required: true })}
         />
       </div>
       <div className="mb-5">
         <label
           htmlFor="subject"
-          className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300"
+          className="block text-sm font-medium text-gray-800 dark:text-gray-200"
         >
           Oggetto
         </label>
@@ -76,14 +76,14 @@ const Contact: FC = () => {
           type="text"
           id="subject"
           placeholder="Inserisci l'oggetto"
-          className="w-full rounded-lg border border-gray-300 bg-white dark:bg-gray-700 py-3 px-4 text-sm text-gray-700 dark:text-gray-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-gray-300 bg-transparent dark:bg-transparent py-3 px-4 text-sm text-gray-800 dark:text-gray-200 focus:ring-2 focus:ring-blue-500"
           {...register("subject", { required: true })}
         />
       </div>
       <div className="mb-5">
         <label
           htmlFor="message"
-          className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300"
+          className="block text-sm font-medium text-gray-800 dark:text-gray-200"
         >
           Messaggio
         </label>
@@ -93,7 +93,7 @@ const Contact: FC = () => {
           rows={5}
           maxLength={MAX_MESSAGE_LENGTH}
           placeholder={`Scrivi il tuo messaggio (max ${MAX_MESSAGE_LENGTH} caratteri)`}
-          className="w-full rounded-lg border border-gray-300 bg-white dark:bg-gray-700 py-3 px-4 text-sm text-gray-700 dark:text-gray-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-gray-300 bg-transparent dark:bg-transparent py-3 px-4 text-sm text-gray-800 dark:text-gray-200 focus:ring-2 focus:ring-blue-500"
           {...register("message", { required: true })}
           onChange={handleMessageChange}
         ></textarea>
