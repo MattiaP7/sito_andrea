@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Sezione di copertura con immagine */}
       <section className="relative w-full h-[50vh] sm:h-[60vh] lg:h-[70vh]">
         <Image
           src="/static/image/catasto.webp"
@@ -25,28 +24,19 @@ const Page = () => {
         </div>
       </section>
 
-      {/* Sezione di contenuti */}
       <section className="px-4 py-8 sm:py-12">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">
-            Cos'è il Catasto?
+            Pratiche catastali e rilievi topografici
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-            fugit dolorem commodi praesentium, debitis officia sunt, magni,
-            sequi explicabo obcaecati exercitationem quis modi laboriosam
-            voluptate aliquid maxime nobis! Rem obcaecati laborum corporis
-            accusamus labore, harum illum earum, inventore maxime, aut molestias
-            ex! Temporibus repellat aspernatur ut, excepturi aut necessitatibus
-            iste velit amet vitae ea rerum alias, sunt nihil repellendus autem
-            nesciunt ipsum, corrupti rem porro quisquam! Debitis quam vero quod
-            accusantium laborum ut natus at voluptates hic repellat aperiam
-            dolores, commodi molestias atque illo omnis? Cumque fugit nulla id
-            quia ipsam placeat praesentium tempore, et pariatur, perspiciatis,
-            perferendis sit aliquid?
+            Le pratiche di aggiornamento catastale e i rilievi topografici sono
+            fondamentali per la gestione del territorio, la pianificazione
+            urbanistica e la regolarizzazione delle proprietà immobiliari.
+            Queste operazioni richiedono competenze tecniche specifiche e una
+            conoscenza approfondita delle normative vigenti.
           </p>
 
-          {/* Link per altre pagine */}
           <div className="text-center">
             <Link
               className="inline-block px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-200"

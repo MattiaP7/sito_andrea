@@ -27,7 +27,7 @@ const Navbar = async () => {
         <div className="hidden md:flex gap-4">
           <Link
             href="/contatti"
-            className={buttonVariants({ variant: "ghost" })}
+            className={buttonVariants({ variant: "link" })}
           >
             <MessageSquareText /> Scrivimi
           </Link>
@@ -38,7 +38,7 @@ const Navbar = async () => {
               <button
                 aria-label="Menu delle Attività"
                 className={`${buttonVariants({
-                  variant: "ghost",
+                  variant: "link",
                 })} flex items-center gap-1`}
               >
                 <Pencil />
@@ -78,7 +78,7 @@ const Navbar = async () => {
           <Link
             aria-label="Su di me"
             href="/about"
-            className={buttonVariants({ variant: "ghost" })}
+            className={buttonVariants({ variant: "link" })}
           >
             <Book /> Su di me
           </Link>

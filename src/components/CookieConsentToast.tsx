@@ -46,13 +46,13 @@ export default function CookieConsentToast() {
       <div className="mt-2 flex justify-end gap-2 sm:mt-0">
         <Button
           onClick={handleAccept}
-          className="bg-green-500 text-white hover:bg-green-700"
+          className="bg-green-800 text-white hover:bg-green-950"
         >
           Accetto
         </Button>
         <Button
           onClick={handleDecline}
-          className="bg-gray-500 text-white hover:bg-gray-600"
+          className="bg-gray-700 text-white hover:bg-gray-900"
         >
           Rifiuto
         </Button>

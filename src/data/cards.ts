@@ -1,5 +1,15 @@
 export const cards = [
   {
+    title: "Sicurezza",
+    sub_title:
+      "Prevenzione, Normative e Strumenti per la Tutela dei Lavoratori",
+    description:
+      "La sicurezza sul lavoro e nei cantieri tutela la salute dei lavoratori, prevenendo rischi e incidenti tramite normative, formazione e strumenti specifici per ogni ambiente operativo.",
+    link: "/attivita/sicurezza",
+    src: "https://utfs.io/f/cbRVfwuVDxZ2Mzh599GPEYTfqbiLpD9ZoheSlB8aRXWAM1uH",
+    alt: "Operatori in cantiere che rispettano le norme di sicurezza",
+  },
+  {
     title: "Progettazione",
     sub_title:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, pariatur.",
@@ -20,7 +30,7 @@ export const cards = [
     alt: "Supervisione di un cantiere edile durante i lavori",
   },
   {
-    title: "Catasto",
+    title: "Catasto e rilievi topografici",
     sub_title:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, pariatur.",
     description:
@@ -28,15 +38,5 @@ export const cards = [
     link: "/attivita/catasto",
     src: "https://utfs.io/f/cbRVfwuVDxZ2TcpR3xZSPhiA4lwIfvMQ5Du3C0RBeJNO8Hjp",
     alt: "Rappresentazione grafica e documentale di attività catastali",
-  },
-  {
-    title: "Sicurezza",
-    sub_title:
-      "Prevenzione, Normative e Strumenti per la Tutela dei Lavoratori",
-    description:
-      "La sicurezza sul lavoro e nei cantieri tutela la salute dei lavoratori, prevenendo rischi e incidenti tramite normative, formazione e strumenti specifici per ogni ambiente operativo.",
-    link: "/attivita/sicurezza",
-    src: "https://utfs.io/f/cbRVfwuVDxZ2Mzh599GPEYTfqbiLpD9ZoheSlB8aRXWAM1uH",
-    alt: "Operatori in cantiere che rispettano le norme di sicurezza",
   },
 ];

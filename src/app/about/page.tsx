@@ -1,17 +1,25 @@
-import React from "react";
-import { Metadata } from "next";
+import Timeline from "@/components/ui/Timeline";
+import { timelineItems } from "@/data/timelineItems";
 
-export const metadata: Metadata = {
-  title: "Andrea Corazza - pagina about",
-  description: "Sito internet di Andrea Corazza, about page",
-};
-
-const Page = () => {
+export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center">
-      <div className="w-full max-w-4xl">in fase di creazione... v2.3</div>
+    <div className="container max-w-7xl mx-auto pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
+          Percorso Professionale
+        </h1>
+        <p className="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+          Una carriera ricca di formazione, esperienze e specializzazioni nel
+          campo della geometria, sicurezza e ricostruzione post-sismica
+        </p>
+      </div>
+
+      <Timeline
+        items={timelineItems}
+        className="mt-12"
+        iconClassName="bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300"
+        lineClassName="bg-blue-200 dark:bg-blue-800"
+      />
     </div>
   );
-};
-
-export default Page;
+}

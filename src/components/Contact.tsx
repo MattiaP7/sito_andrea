@@ -11,7 +11,7 @@ export type FormData = {
   message: string;
 };
 
-const MAX_MESSAGE_LENGTH = 400;
+const MAX_MESSAGE_LENGTH = 500;
 
 const Contact: FC = () => {
   const { register, handleSubmit } = useForm<FormData>();

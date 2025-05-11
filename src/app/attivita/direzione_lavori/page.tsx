@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Andrea Corazza - attività: direzione lavori",
-  description: "Pagina sull'attività della direzione lavori di Andrea Corazza",
+  title: "Andrea Corazza - attività: catasto",
+  description: "Pagina sull'attività del catasto di Andrea Corazza",
 };
 
 const Page = () => {
@@ -16,15 +15,13 @@ const Page = () => {
       <section className="relative w-full h-[50vh] sm:h-[60vh] lg:h-[70vh]">
         <Image
           src="/static/image/direzione_lavori.webp"
-          alt="Direzione Lavori"
+          alt="Catasto"
           width={1920}
           height={1080}
           className="object-cover w-full h-full"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white">
-          <h1 className="text-4xl sm:text-5xl font-semibold">
-            Direzione Lavori
-          </h1>
+          <h1 className="text-4xl sm:text-5xl font-semibold">Catasto</h1>
         </div>
       </section>
 
@@ -32,7 +29,7 @@ const Page = () => {
       <section className="px-4 py-8 sm:py-12">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">
-            Cos'è la Direzione Lavori?
+            Cos'è il Catasto?
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
